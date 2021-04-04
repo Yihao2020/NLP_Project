@@ -4,10 +4,19 @@ import string
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
+from utilities import  save_data_dataframe_to_csv
+nltk.download('punkt')
+nltk.download('stopwords')
+
 
 def preprocess_file(filename):
     data = load_data_csv_to_dataframe(filename)
-    pass
+    for index, row in data.iterrows():
+        text = row['comment_text']
+        text = remove_puntucation(text)
+        text = tokennize(text)
+        text = fileter_stopwords(text)
+        row['comment_text'] = text
 
 
 def remove_puntucation(sentence):
@@ -16,6 +25,7 @@ def remove_puntucation(sentence):
 
 
 def tokennize(sentece):
+
     words = word_tokenize(sentece)
     return words
 
@@ -30,4 +40,3 @@ def stemming(words):
     return words
 
 
-preprocess_file("../data/test.csv")
