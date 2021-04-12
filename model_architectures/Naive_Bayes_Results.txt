@@ -1,0 +1,95 @@
+(159571, 8)
+
+(153164, 2)
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 159571 entries, 0 to 159570
+Data columns (total 8 columns):
+ #   Column         Non-Null Count   Dtype 
+---  ------         --------------   ----- 
+ 0   id             159571 non-null  object
+ 1   comment_text   159571 non-null  object
+ 2   toxic          159571 non-null  int64 
+ 3   severe_toxic   159571 non-null  int64 
+ 4   obscene        159571 non-null  int64 
+ 5   threat         159571 non-null  int64 
+ 6   insult         159571 non-null  int64 
+ 7   identity_hate  159571 non-null  int64 
+dtypes: int64(6), object(2)
+memory usage: 9.7+ MB
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 153164 entries, 0 to 153163
+Data columns (total 2 columns):
+ #   Column        Non-Null Count   Dtype 
+---  ------        --------------   ----- 
+ 0   id            153164 non-null  object
+ 1   comment_text  153164 non-null  object
+dtypes: object(2)
+memory usage: 2.3+ MB
+
+toxic
+severe_toxic
+obscene
+threat
+insult
+identity_hate
+
+toxic
+First 10 Features:
+['00', '000', '0000', '00000', '000000', '0000000', '00000000', '0000000027', '00000001', '0000030422']
+accuracy:
+0.9495622780531343
+confusion matrix:
+[[47058   616]
+ [ 2040  2945]]
+
+severe_toxic
+First 10 Features:
+['00', '000', '0000', '00000', '000000', '0000000', '00000000', '0000000027', '00000001', '0000030422']
+accuracy:
+0.988416035245637
+confusion matrix:
+[[51841   284]
+ [  326   208]]
+
+obscene
+First 10 Features:
+['00', '000', '0000', '00000', '000000', '0000000', '00000000', '0000000027', '00000001', '0000030422']
+accuracy:
+0.9701285630186672
+confusion matrix:
+[[49443   438]
+ [ 1135  1643]]
+
+threat
+First 10 Features:
+['00', '000', '0000', '00000', '000000', '0000000', '00000000', '0000000027', '00000001', '0000030422']
+accuracy:
+0.9969425929090944
+confusion matrix:
+[[52491    24]
+ [  137     7]]
+
+insult
+First 10 Features:
+['00', '000', '0000', '00000', '000000', '0000000', '00000000', '0000000027', '00000001', '0000030422']
+accuracy:
+0.9669382251846788
+confusion matrix:
+[[49604   500]
+ [ 1241  1314]]
+
+identity_hate
+First 10 Features:
+['00', '000', '0000', '00000', '000000', '0000000', '00000000', '0000000027', '00000001', '0000030422']
+accuracy:
+0.9898592833133937
+confusion matrix:
+[[52063   127]
+ [  407    62]]
+
+Average accuracy score:
+97.69744962874341
+
+Done
