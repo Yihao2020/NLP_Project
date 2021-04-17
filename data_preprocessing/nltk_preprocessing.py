@@ -17,6 +17,9 @@ def preprocess_file(filename):
         text = tokennize(text)
         text = fileter_stopwords(text)
         row['comment_text'] = text
+        data.at[index,'comment_text'] = text
+
+    return data
 
 
 def remove_puntucation(sentence):
