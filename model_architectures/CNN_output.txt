@@ -1,0 +1,49 @@
+--- starting to build the model ---
+Epoch 1/5
+128/128 [==============================] - 32s 231ms/step - loss: 0.3077 - accuracy: 0.3378
+Epoch 2/5
+128/128 [==============================] - 30s 231ms/step - loss: 0.1371 - accuracy: 0.7124
+Epoch 3/5
+128/128 [==============================] - 29s 230ms/step - loss: 0.1138 - accuracy: 0.8327
+Epoch 4/5
+128/128 [==============================] - 29s 230ms/step - loss: 0.0916 - accuracy: 0.9216
+Epoch 5/5
+128/128 [==============================] - 29s 229ms/step - loss: 0.0842 - accuracy: 0.9381
+--- Finish the building ---
+
+The accuracy for CNN model is 0.903368322105593
+
+The confusion matrix for each label in ["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"] is:
+[[[28541   271]
+  [ 2003  1100]]
+
+ [[31596    16]
+  [  272    31]]
+
+ [[30005   223]
+  [ 1051   636]]
+
+ [[31814     0]
+  [  101     0]]
+
+ [[30086   255]
+  [ 1022   552]]
+
+ [[31629     0]
+  [  286     0]]]
+
+The classification report is:
+ 				precision    recall  f1-score   support
+
+        toxic       0.80      0.35      0.49      3103
+ severe_toxic       0.66      0.10      0.18       303
+      obscene       0.74      0.38      0.50      1687
+       threat       1.00      0.00      0.00       101
+       insult       0.68      0.35      0.46      1574
+identity_hate       1.00      0.00      0.00       286
+
+    micro avg       0.75      0.33      0.46      7054
+    macro avg       0.81      0.20      0.27      7054
+ weighted avg       0.77      0.33      0.45      7054
+  samples avg       0.99      0.93      0.92      7054
+
