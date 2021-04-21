@@ -57,29 +57,28 @@ def buildModel(xtrain,ytrain):
     return model
 
 def main():
-	# Prepare train and test data
-	# df= pd.read_csv(io.BytesIO(uploaded['train.csv']),encoding='latin-1') 
-	# df1 = df.head(10000)
-	df = preprocess_file('data/train.csv')
-	X=df['comment_text']
-	classes=["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]
-	y=df[classes].values
+    # Prepare train and test data
+    # df= pd.read_csv(io.BytesIO(uploaded['train.csv']),encoding='latin-1') 
+    # df1 = df.head(10000)
+    df = preprocess_file('data/train.csv')
+    X=df['comment_text']
+    classes=["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]
+    y=df[classes].values
 
-	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
+    xtrain,xtest,vocab_size=embedding(X_train,X_test)
+    CNN_model = buildModel(xtrain,y_train)
+    y_pred = np.around(CNN_model.predict(xtest))
 
-	xtrain,xtest,vocab_size=embedding(X_train,X_test)
-	CNN_model = buildModel(xtrain,y_train)
-	y_pred = np.around(CNN_model.predict(xtest))
+    # print results
+    CNN_acc = metrics.accuracy_score(y_test,y_pred)
+    print('The accuracy for CNN model is', CNN_acc)
 
-	# print results
-	CNN_acc = metrics.accuracy_score(y_test,y_pred)
-	print('The accuracy for CNN model is', CNN_acc)
+    CNN_cm = metrics.multilabel_confusion_matrix(y_test, y_pred)
+    print('The confusion matrix for each label in ["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"] is:')
+    print(CNN_cm)
 
-	CNN_cm = metrics.multilabel_confusion_matrix(y_test, y_pred)
-	print('The confusion matrix for each label in ["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"] is:')
-	print(CNN_cm)
-
-	print(metrics.classification_report(y_test, y_pred, target_names=classes, zero_division=1))
+    print(metrics.classification_report(y_test, y_pred, target_names=classes, zero_division=1))
 
 
 if __name__ == "__main__":
