@@ -18,7 +18,8 @@ def generate_bert_embeddings(filename):
 
 
 if __name__ == "__main__":
-    generate_bert_embeddings("")
+    data = generate_bert_embeddings("")
+    data.to_pickle("../data/embedding.pkl")
 
 
 
