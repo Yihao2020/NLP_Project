@@ -1,0 +1,652 @@
+Reading Data...
+Complete reading data
+
+Creating Dataset...
+Data preprocessing...
+Complete preparing Dataset
+Full Dataset: (159571, 2)
+Train Dataset: (114890, 2)
+Valid Dataset: (12766, 2)
+Test Dataset: (31915, 2)
+
+In Train Dataset:
+| toxic: 10978 | severe toxic:  1169 | obscene:  6104 | threat:   356 | insult:  5688 | identity hate:  1028 |
+Set up Model...
+Complete setup
+
+Start training...
+
+| epoch   1 |   500/ 1796 batches | accuracy    0.034
+| epoch   1 |  1000/ 1796 batches | accuracy    0.045
+| epoch   1 |  1500/ 1796 batches | accuracy    0.059
+-----------------------------------------------------------
+| end of epoch   1 | time: 27.57s | valid accuracy    0.032
+-----------------------------------------------------------
+| epoch   2 |   500/ 1796 batches | accuracy    0.084
+| epoch   2 |  1000/ 1796 batches | accuracy    0.097
+| epoch   2 |  1500/ 1796 batches | accuracy    0.114
+-----------------------------------------------------------
+| end of epoch   2 | time: 26.14s | valid accuracy    0.081
+-----------------------------------------------------------
+| epoch   3 |   500/ 1796 batches | accuracy    0.138
+| epoch   3 |  1000/ 1796 batches | accuracy    0.151
+| epoch   3 |  1500/ 1796 batches | accuracy    0.163
+-----------------------------------------------------------
+| end of epoch   3 | time: 26.37s | valid accuracy    0.151
+-----------------------------------------------------------
+| epoch   4 |   500/ 1796 batches | accuracy    0.187
+| epoch   4 |  1000/ 1796 batches | accuracy    0.197
+| epoch   4 |  1500/ 1796 batches | accuracy    0.207
+-----------------------------------------------------------
+| end of epoch   4 | time: 26.13s | valid accuracy    0.253
+-----------------------------------------------------------
+| epoch   5 |   500/ 1796 batches | accuracy    0.225
+| epoch   5 |  1000/ 1796 batches | accuracy    0.242
+| epoch   5 |  1500/ 1796 batches | accuracy    0.246
+-----------------------------------------------------------
+| end of epoch   5 | time: 26.07s | valid accuracy    0.369
+-----------------------------------------------------------
+| epoch   6 |   500/ 1796 batches | accuracy    0.263
+| epoch   6 |  1000/ 1796 batches | accuracy    0.277
+| epoch   6 |  1500/ 1796 batches | accuracy    0.287
+-----------------------------------------------------------
+| end of epoch   6 | time: 25.75s | valid accuracy    0.482
+-----------------------------------------------------------
+| epoch   7 |   500/ 1796 batches | accuracy    0.299
+| epoch   7 |  1000/ 1796 batches | accuracy    0.309
+| epoch   7 |  1500/ 1796 batches | accuracy    0.323
+-----------------------------------------------------------
+| end of epoch   7 | time: 25.63s | valid accuracy    0.576
+-----------------------------------------------------------
+| epoch   8 |   500/ 1796 batches | accuracy    0.337
+| epoch   8 |  1000/ 1796 batches | accuracy    0.346
+| epoch   8 |  1500/ 1796 batches | accuracy    0.352
+-----------------------------------------------------------
+| end of epoch   8 | time: 26.37s | valid accuracy    0.649
+-----------------------------------------------------------
+| epoch   9 |   500/ 1796 batches | accuracy    0.367
+| epoch   9 |  1000/ 1796 batches | accuracy    0.378
+| epoch   9 |  1500/ 1796 batches | accuracy    0.385
+-----------------------------------------------------------
+| end of epoch   9 | time: 25.47s | valid accuracy    0.708
+-----------------------------------------------------------
+| epoch  10 |   500/ 1796 batches | accuracy    0.395
+| epoch  10 |  1000/ 1796 batches | accuracy    0.409
+| epoch  10 |  1500/ 1796 batches | accuracy    0.414
+-----------------------------------------------------------
+| end of epoch  10 | time: 25.99s | valid accuracy    0.746
+-----------------------------------------------------------
+| epoch  11 |   500/ 1796 batches | accuracy    0.424
+| epoch  11 |  1000/ 1796 batches | accuracy    0.434
+| epoch  11 |  1500/ 1796 batches | accuracy    0.438
+-----------------------------------------------------------
+| end of epoch  11 | time: 25.96s | valid accuracy    0.777
+-----------------------------------------------------------
+| epoch  12 |   500/ 1796 batches | accuracy    0.453
+| epoch  12 |  1000/ 1796 batches | accuracy    0.455
+| epoch  12 |  1500/ 1796 batches | accuracy    0.463
+-----------------------------------------------------------
+| end of epoch  12 | time: 26.07s | valid accuracy    0.801
+-----------------------------------------------------------
+| epoch  13 |   500/ 1796 batches | accuracy    0.470
+| epoch  13 |  1000/ 1796 batches | accuracy    0.483
+| epoch  13 |  1500/ 1796 batches | accuracy    0.485
+-----------------------------------------------------------
+| end of epoch  13 | time: 26.35s | valid accuracy    0.816
+-----------------------------------------------------------
+| epoch  14 |   500/ 1796 batches | accuracy    0.495
+| epoch  14 |  1000/ 1796 batches | accuracy    0.502
+| epoch  14 |  1500/ 1796 batches | accuracy    0.511
+-----------------------------------------------------------
+| end of epoch  14 | time: 25.44s | valid accuracy    0.829
+-----------------------------------------------------------
+| epoch  15 |   500/ 1796 batches | accuracy    0.514
+| epoch  15 |  1000/ 1796 batches | accuracy    0.521
+| epoch  15 |  1500/ 1796 batches | accuracy    0.530
+-----------------------------------------------------------
+| end of epoch  15 | time: 28.05s | valid accuracy    0.841
+-----------------------------------------------------------
+| epoch  16 |   500/ 1796 batches | accuracy    0.536
+| epoch  16 |  1000/ 1796 batches | accuracy    0.538
+| epoch  16 |  1500/ 1796 batches | accuracy    0.546
+-----------------------------------------------------------
+| end of epoch  16 | time: 26.02s | valid accuracy    0.849
+-----------------------------------------------------------
+| epoch  17 |   500/ 1796 batches | accuracy    0.551
+| epoch  17 |  1000/ 1796 batches | accuracy    0.560
+| epoch  17 |  1500/ 1796 batches | accuracy    0.563
+-----------------------------------------------------------
+| end of epoch  17 | time: 25.64s | valid accuracy    0.856
+-----------------------------------------------------------
+| epoch  18 |   500/ 1796 batches | accuracy    0.575
+| epoch  18 |  1000/ 1796 batches | accuracy    0.574
+| epoch  18 |  1500/ 1796 batches | accuracy    0.576
+-----------------------------------------------------------
+| end of epoch  18 | time: 27.82s | valid accuracy    0.860
+-----------------------------------------------------------
+| epoch  19 |   500/ 1796 batches | accuracy    0.585
+| epoch  19 |  1000/ 1796 batches | accuracy    0.586
+| epoch  19 |  1500/ 1796 batches | accuracy    0.596
+-----------------------------------------------------------
+| end of epoch  19 | time: 25.41s | valid accuracy    0.864
+-----------------------------------------------------------
+| epoch  20 |   500/ 1796 batches | accuracy    0.597
+| epoch  20 |  1000/ 1796 batches | accuracy    0.605
+| epoch  20 |  1500/ 1796 batches | accuracy    0.604
+-----------------------------------------------------------
+| end of epoch  20 | time: 27.08s | valid accuracy    0.867
+-----------------------------------------------------------
+| epoch  21 |   500/ 1796 batches | accuracy    0.610
+| epoch  21 |  1000/ 1796 batches | accuracy    0.621
+| epoch  21 |  1500/ 1796 batches | accuracy    0.616
+-----------------------------------------------------------
+| end of epoch  21 | time: 25.98s | valid accuracy    0.870
+-----------------------------------------------------------
+| epoch  22 |   500/ 1796 batches | accuracy    0.621
+| epoch  22 |  1000/ 1796 batches | accuracy    0.627
+| epoch  22 |  1500/ 1796 batches | accuracy    0.630
+-----------------------------------------------------------
+| end of epoch  22 | time: 25.71s | valid accuracy    0.873
+-----------------------------------------------------------
+| epoch  23 |   500/ 1796 batches | accuracy    0.635
+| epoch  23 |  1000/ 1796 batches | accuracy    0.636
+| epoch  23 |  1500/ 1796 batches | accuracy    0.638
+-----------------------------------------------------------
+| end of epoch  23 | time: 26.37s | valid accuracy    0.875
+-----------------------------------------------------------
+| epoch  24 |   500/ 1796 batches | accuracy    0.643
+| epoch  24 |  1000/ 1796 batches | accuracy    0.646
+| epoch  24 |  1500/ 1796 batches | accuracy    0.650
+-----------------------------------------------------------
+| end of epoch  24 | time: 25.67s | valid accuracy    0.877
+-----------------------------------------------------------
+| epoch  25 |   500/ 1796 batches | accuracy    0.656
+| epoch  25 |  1000/ 1796 batches | accuracy    0.656
+| epoch  25 |  1500/ 1796 batches | accuracy    0.660
+-----------------------------------------------------------
+| end of epoch  25 | time: 26.25s | valid accuracy    0.878
+-----------------------------------------------------------
+| epoch  26 |   500/ 1796 batches | accuracy    0.665
+| epoch  26 |  1000/ 1796 batches | accuracy    0.666
+| epoch  26 |  1500/ 1796 batches | accuracy    0.665
+-----------------------------------------------------------
+| end of epoch  26 | time: 25.36s | valid accuracy    0.879
+-----------------------------------------------------------
+| epoch  27 |   500/ 1796 batches | accuracy    0.674
+| epoch  27 |  1000/ 1796 batches | accuracy    0.677
+| epoch  27 |  1500/ 1796 batches | accuracy    0.674
+-----------------------------------------------------------
+| end of epoch  27 | time: 25.56s | valid accuracy    0.880
+-----------------------------------------------------------
+| epoch  28 |   500/ 1796 batches | accuracy    0.682
+| epoch  28 |  1000/ 1796 batches | accuracy    0.679
+| epoch  28 |  1500/ 1796 batches | accuracy    0.683
+-----------------------------------------------------------
+| end of epoch  28 | time: 26.29s | valid accuracy    0.882
+-----------------------------------------------------------
+| epoch  29 |   500/ 1796 batches | accuracy    0.689
+| epoch  29 |  1000/ 1796 batches | accuracy    0.686
+| epoch  29 |  1500/ 1796 batches | accuracy    0.691
+-----------------------------------------------------------
+| end of epoch  29 | time: 25.92s | valid accuracy    0.883
+-----------------------------------------------------------
+| epoch  30 |   500/ 1796 batches | accuracy    0.692
+| epoch  30 |  1000/ 1796 batches | accuracy    0.697
+| epoch  30 |  1500/ 1796 batches | accuracy    0.698
+-----------------------------------------------------------
+| end of epoch  30 | time: 27.96s | valid accuracy    0.884
+-----------------------------------------------------------
+| epoch  31 |   500/ 1796 batches | accuracy    0.699
+| epoch  31 |  1000/ 1796 batches | accuracy    0.705
+| epoch  31 |  1500/ 1796 batches | accuracy    0.703
+-----------------------------------------------------------
+| end of epoch  31 | time: 28.42s | valid accuracy    0.885
+-----------------------------------------------------------
+| epoch  32 |   500/ 1796 batches | accuracy    0.703
+| epoch  32 |  1000/ 1796 batches | accuracy    0.707
+| epoch  32 |  1500/ 1796 batches | accuracy    0.717
+-----------------------------------------------------------
+| end of epoch  32 | time: 25.96s | valid accuracy    0.886
+-----------------------------------------------------------
+| epoch  33 |   500/ 1796 batches | accuracy    0.710
+| epoch  33 |  1000/ 1796 batches | accuracy    0.719
+| epoch  33 |  1500/ 1796 batches | accuracy    0.715
+-----------------------------------------------------------
+| end of epoch  33 | time: 26.30s | valid accuracy    0.887
+-----------------------------------------------------------
+| epoch  34 |   500/ 1796 batches | accuracy    0.718
+| epoch  34 |  1000/ 1796 batches | accuracy    0.717
+| epoch  34 |  1500/ 1796 batches | accuracy    0.726
+-----------------------------------------------------------
+| end of epoch  34 | time: 25.85s | valid accuracy    0.887
+-----------------------------------------------------------
+| epoch  35 |   500/ 1796 batches | accuracy    0.722
+| epoch  35 |  1000/ 1796 batches | accuracy    0.728
+| epoch  35 |  1500/ 1796 batches | accuracy    0.727
+-----------------------------------------------------------
+| end of epoch  35 | time: 26.03s | valid accuracy    0.888
+-----------------------------------------------------------
+| epoch  36 |   500/ 1796 batches | accuracy    0.729
+| epoch  36 |  1000/ 1796 batches | accuracy    0.733
+| epoch  36 |  1500/ 1796 batches | accuracy    0.730
+-----------------------------------------------------------
+| end of epoch  36 | time: 25.39s | valid accuracy    0.888
+-----------------------------------------------------------
+| epoch  37 |   500/ 1796 batches | accuracy    0.735
+| epoch  37 |  1000/ 1796 batches | accuracy    0.736
+| epoch  37 |  1500/ 1796 batches | accuracy    0.736
+-----------------------------------------------------------
+| end of epoch  37 | time: 25.61s | valid accuracy    0.889
+-----------------------------------------------------------
+| epoch  38 |   500/ 1796 batches | accuracy    0.740
+| epoch  38 |  1000/ 1796 batches | accuracy    0.737
+| epoch  38 |  1500/ 1796 batches | accuracy    0.738
+-----------------------------------------------------------
+| end of epoch  38 | time: 26.70s | valid accuracy    0.889
+-----------------------------------------------------------
+| epoch  39 |   500/ 1796 batches | accuracy    0.742
+| epoch  39 |  1000/ 1796 batches | accuracy    0.742
+| epoch  39 |  1500/ 1796 batches | accuracy    0.744
+-----------------------------------------------------------
+| end of epoch  39 | time: 25.62s | valid accuracy    0.890
+-----------------------------------------------------------
+| epoch  40 |   500/ 1796 batches | accuracy    0.748
+| epoch  40 |  1000/ 1796 batches | accuracy    0.747
+| epoch  40 |  1500/ 1796 batches | accuracy    0.749
+-----------------------------------------------------------
+| end of epoch  40 | time: 25.87s | valid accuracy    0.890
+-----------------------------------------------------------
+| epoch  41 |   500/ 1796 batches | accuracy    0.748
+| epoch  41 |  1000/ 1796 batches | accuracy    0.753
+| epoch  41 |  1500/ 1796 batches | accuracy    0.750
+-----------------------------------------------------------
+| end of epoch  41 | time: 25.83s | valid accuracy    0.890
+-----------------------------------------------------------
+| epoch  42 |   500/ 1796 batches | accuracy    0.755
+| epoch  42 |  1000/ 1796 batches | accuracy    0.756
+| epoch  42 |  1500/ 1796 batches | accuracy    0.756
+-----------------------------------------------------------
+| end of epoch  42 | time: 25.71s | valid accuracy    0.891
+-----------------------------------------------------------
+| epoch  43 |   500/ 1796 batches | accuracy    0.760
+| epoch  43 |  1000/ 1796 batches | accuracy    0.759
+| epoch  43 |  1500/ 1796 batches | accuracy    0.760
+-----------------------------------------------------------
+| end of epoch  43 | time: 26.05s | valid accuracy    0.891
+-----------------------------------------------------------
+| epoch  44 |   500/ 1796 batches | accuracy    0.759
+| epoch  44 |  1000/ 1796 batches | accuracy    0.763
+| epoch  44 |  1500/ 1796 batches | accuracy    0.764
+-----------------------------------------------------------
+| end of epoch  44 | time: 25.53s | valid accuracy    0.892
+-----------------------------------------------------------
+| epoch  45 |   500/ 1796 batches | accuracy    0.764
+| epoch  45 |  1000/ 1796 batches | accuracy    0.766
+| epoch  45 |  1500/ 1796 batches | accuracy    0.767
+-----------------------------------------------------------
+| end of epoch  45 | time: 25.70s | valid accuracy    0.892
+-----------------------------------------------------------
+| epoch  46 |   500/ 1796 batches | accuracy    0.770
+| epoch  46 |  1000/ 1796 batches | accuracy    0.766
+| epoch  46 |  1500/ 1796 batches | accuracy    0.767
+-----------------------------------------------------------
+| end of epoch  46 | time: 26.16s | valid accuracy    0.892
+-----------------------------------------------------------
+| epoch  47 |   500/ 1796 batches | accuracy    0.771
+| epoch  47 |  1000/ 1796 batches | accuracy    0.771
+| epoch  47 |  1500/ 1796 batches | accuracy    0.770
+-----------------------------------------------------------
+| end of epoch  47 | time: 25.25s | valid accuracy    0.892
+-----------------------------------------------------------
+| epoch  48 |   500/ 1796 batches | accuracy    0.776
+| epoch  48 |  1000/ 1796 batches | accuracy    0.770
+| epoch  48 |  1500/ 1796 batches | accuracy    0.777
+-----------------------------------------------------------
+| end of epoch  48 | time: 26.24s | valid accuracy    0.892
+-----------------------------------------------------------
+| epoch  49 |   500/ 1796 batches | accuracy    0.773
+| epoch  49 |  1000/ 1796 batches | accuracy    0.776
+| epoch  49 |  1500/ 1796 batches | accuracy    0.779
+-----------------------------------------------------------
+| end of epoch  49 | time: 25.56s | valid accuracy    0.892
+-----------------------------------------------------------
+| epoch  50 |   500/ 1796 batches | accuracy    0.781
+| epoch  50 |  1000/ 1796 batches | accuracy    0.780
+| epoch  50 |  1500/ 1796 batches | accuracy    0.779
+-----------------------------------------------------------
+| end of epoch  50 | time: 25.79s | valid accuracy    0.893
+-----------------------------------------------------------
+| epoch  51 |   500/ 1796 batches | accuracy    0.782
+| epoch  51 |  1000/ 1796 batches | accuracy    0.783
+| epoch  51 |  1500/ 1796 batches | accuracy    0.784
+-----------------------------------------------------------
+| end of epoch  51 | time: 26.16s | valid accuracy    0.893
+-----------------------------------------------------------
+| epoch  52 |   500/ 1796 batches | accuracy    0.783
+| epoch  52 |  1000/ 1796 batches | accuracy    0.788
+| epoch  52 |  1500/ 1796 batches | accuracy    0.786
+-----------------------------------------------------------
+| end of epoch  52 | time: 26.49s | valid accuracy    0.893
+-----------------------------------------------------------
+| epoch  53 |   500/ 1796 batches | accuracy    0.788
+| epoch  53 |  1000/ 1796 batches | accuracy    0.786
+| epoch  53 |  1500/ 1796 batches | accuracy    0.788
+-----------------------------------------------------------
+| end of epoch  53 | time: 26.42s | valid accuracy    0.893
+-----------------------------------------------------------
+| epoch  54 |   500/ 1796 batches | accuracy    0.792
+| epoch  54 |  1000/ 1796 batches | accuracy    0.788
+| epoch  54 |  1500/ 1796 batches | accuracy    0.789
+-----------------------------------------------------------
+| end of epoch  54 | time: 25.42s | valid accuracy    0.893
+-----------------------------------------------------------
+| epoch  55 |   500/ 1796 batches | accuracy    0.793
+| epoch  55 |  1000/ 1796 batches | accuracy    0.789
+| epoch  55 |  1500/ 1796 batches | accuracy    0.791
+-----------------------------------------------------------
+| end of epoch  55 | time: 25.70s | valid accuracy    0.893
+-----------------------------------------------------------
+| epoch  56 |   500/ 1796 batches | accuracy    0.793
+| epoch  56 |  1000/ 1796 batches | accuracy    0.793
+| epoch  56 |  1500/ 1796 batches | accuracy    0.795
+-----------------------------------------------------------
+| end of epoch  56 | time: 26.15s | valid accuracy    0.894
+-----------------------------------------------------------
+| epoch  57 |   500/ 1796 batches | accuracy    0.793
+| epoch  57 |  1000/ 1796 batches | accuracy    0.794
+| epoch  57 |  1500/ 1796 batches | accuracy    0.797
+-----------------------------------------------------------
+| end of epoch  57 | time: 26.28s | valid accuracy    0.894
+-----------------------------------------------------------
+| epoch  58 |   500/ 1796 batches | accuracy    0.796
+| epoch  58 |  1000/ 1796 batches | accuracy    0.801
+| epoch  58 |  1500/ 1796 batches | accuracy    0.792
+-----------------------------------------------------------
+| end of epoch  58 | time: 26.38s | valid accuracy    0.894
+-----------------------------------------------------------
+| epoch  59 |   500/ 1796 batches | accuracy    0.798
+| epoch  59 |  1000/ 1796 batches | accuracy    0.799
+| epoch  59 |  1500/ 1796 batches | accuracy    0.799
+-----------------------------------------------------------
+| end of epoch  59 | time: 25.91s | valid accuracy    0.894
+-----------------------------------------------------------
+| epoch  60 |   500/ 1796 batches | accuracy    0.798
+| epoch  60 |  1000/ 1796 batches | accuracy    0.800
+| epoch  60 |  1500/ 1796 batches | accuracy    0.803
+-----------------------------------------------------------
+| end of epoch  60 | time: 25.90s | valid accuracy    0.894
+-----------------------------------------------------------
+| epoch  61 |   500/ 1796 batches | accuracy    0.802
+| epoch  61 |  1000/ 1796 batches | accuracy    0.802
+| epoch  61 |  1500/ 1796 batches | accuracy    0.804
+-----------------------------------------------------------
+| end of epoch  61 | time: 26.09s | valid accuracy    0.894
+-----------------------------------------------------------
+| epoch  62 |   500/ 1796 batches | accuracy    0.804
+| epoch  62 |  1000/ 1796 batches | accuracy    0.806
+| epoch  62 |  1500/ 1796 batches | accuracy    0.802
+-----------------------------------------------------------
+| end of epoch  62 | time: 25.69s | valid accuracy    0.894
+-----------------------------------------------------------
+| epoch  63 |   500/ 1796 batches | accuracy    0.802
+| epoch  63 |  1000/ 1796 batches | accuracy    0.808
+| epoch  63 |  1500/ 1796 batches | accuracy    0.808
+-----------------------------------------------------------
+| end of epoch  63 | time: 26.34s | valid accuracy    0.895
+-----------------------------------------------------------
+| epoch  64 |   500/ 1796 batches | accuracy    0.805
+| epoch  64 |  1000/ 1796 batches | accuracy    0.807
+| epoch  64 |  1500/ 1796 batches | accuracy    0.807
+-----------------------------------------------------------
+| end of epoch  64 | time: 25.83s | valid accuracy    0.895
+-----------------------------------------------------------
+| epoch  65 |   500/ 1796 batches | accuracy    0.807
+| epoch  65 |  1000/ 1796 batches | accuracy    0.807
+| epoch  65 |  1500/ 1796 batches | accuracy    0.809
+-----------------------------------------------------------
+| end of epoch  65 | time: 26.70s | valid accuracy    0.895
+-----------------------------------------------------------
+| epoch  66 |   500/ 1796 batches | accuracy    0.811
+| epoch  66 |  1000/ 1796 batches | accuracy    0.809
+| epoch  66 |  1500/ 1796 batches | accuracy    0.810
+-----------------------------------------------------------
+| end of epoch  66 | time: 26.66s | valid accuracy    0.895
+-----------------------------------------------------------
+| epoch  67 |   500/ 1796 batches | accuracy    0.811
+| epoch  67 |  1000/ 1796 batches | accuracy    0.811
+| epoch  67 |  1500/ 1796 batches | accuracy    0.813
+-----------------------------------------------------------
+| end of epoch  67 | time: 25.81s | valid accuracy    0.895
+-----------------------------------------------------------
+| epoch  68 |   500/ 1796 batches | accuracy    0.815
+| epoch  68 |  1000/ 1796 batches | accuracy    0.814
+| epoch  68 |  1500/ 1796 batches | accuracy    0.812
+-----------------------------------------------------------
+| end of epoch  68 | time: 26.45s | valid accuracy    0.895
+-----------------------------------------------------------
+| epoch  69 |   500/ 1796 batches | accuracy    0.812
+| epoch  69 |  1000/ 1796 batches | accuracy    0.815
+| epoch  69 |  1500/ 1796 batches | accuracy    0.816
+-----------------------------------------------------------
+| end of epoch  69 | time: 25.90s | valid accuracy    0.895
+-----------------------------------------------------------
+| epoch  70 |   500/ 1796 batches | accuracy    0.818
+| epoch  70 |  1000/ 1796 batches | accuracy    0.814
+| epoch  70 |  1500/ 1796 batches | accuracy    0.816
+-----------------------------------------------------------
+| end of epoch  70 | time: 25.48s | valid accuracy    0.895
+-----------------------------------------------------------
+| epoch  71 |   500/ 1796 batches | accuracy    0.817
+| epoch  71 |  1000/ 1796 batches | accuracy    0.816
+| epoch  71 |  1500/ 1796 batches | accuracy    0.818
+-----------------------------------------------------------
+| end of epoch  71 | time: 26.35s | valid accuracy    0.895
+-----------------------------------------------------------
+| epoch  72 |   500/ 1796 batches | accuracy    0.817
+| epoch  72 |  1000/ 1796 batches | accuracy    0.821
+| epoch  72 |  1500/ 1796 batches | accuracy    0.821
+-----------------------------------------------------------
+| end of epoch  72 | time: 25.93s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  73 |   500/ 1796 batches | accuracy    0.816
+| epoch  73 |  1000/ 1796 batches | accuracy    0.820
+| epoch  73 |  1500/ 1796 batches | accuracy    0.821
+-----------------------------------------------------------
+| end of epoch  73 | time: 27.49s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  74 |   500/ 1796 batches | accuracy    0.822
+| epoch  74 |  1000/ 1796 batches | accuracy    0.822
+| epoch  74 |  1500/ 1796 batches | accuracy    0.819
+-----------------------------------------------------------
+| end of epoch  74 | time: 26.27s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  75 |   500/ 1796 batches | accuracy    0.823
+| epoch  75 |  1000/ 1796 batches | accuracy    0.822
+| epoch  75 |  1500/ 1796 batches | accuracy    0.821
+-----------------------------------------------------------
+| end of epoch  75 | time: 25.35s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  76 |   500/ 1796 batches | accuracy    0.821
+| epoch  76 |  1000/ 1796 batches | accuracy    0.823
+| epoch  76 |  1500/ 1796 batches | accuracy    0.827
+-----------------------------------------------------------
+| end of epoch  76 | time: 25.75s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  77 |   500/ 1796 batches | accuracy    0.821
+| epoch  77 |  1000/ 1796 batches | accuracy    0.825
+| epoch  77 |  1500/ 1796 batches | accuracy    0.827
+-----------------------------------------------------------
+| end of epoch  77 | time: 25.99s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  78 |   500/ 1796 batches | accuracy    0.825
+| epoch  78 |  1000/ 1796 batches | accuracy    0.828
+| epoch  78 |  1500/ 1796 batches | accuracy    0.827
+-----------------------------------------------------------
+| end of epoch  78 | time: 25.96s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  79 |   500/ 1796 batches | accuracy    0.824
+| epoch  79 |  1000/ 1796 batches | accuracy    0.826
+| epoch  79 |  1500/ 1796 batches | accuracy    0.830
+-----------------------------------------------------------
+| end of epoch  79 | time: 25.97s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  80 |   500/ 1796 batches | accuracy    0.828
+| epoch  80 |  1000/ 1796 batches | accuracy    0.828
+| epoch  80 |  1500/ 1796 batches | accuracy    0.827
+-----------------------------------------------------------
+| end of epoch  80 | time: 26.47s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  81 |   500/ 1796 batches | accuracy    0.827
+| epoch  81 |  1000/ 1796 batches | accuracy    0.831
+| epoch  81 |  1500/ 1796 batches | accuracy    0.830
+-----------------------------------------------------------
+| end of epoch  81 | time: 26.92s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  82 |   500/ 1796 batches | accuracy    0.830
+| epoch  82 |  1000/ 1796 batches | accuracy    0.829
+| epoch  82 |  1500/ 1796 batches | accuracy    0.832
+-----------------------------------------------------------
+| end of epoch  82 | time: 26.59s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  83 |   500/ 1796 batches | accuracy    0.829
+| epoch  83 |  1000/ 1796 batches | accuracy    0.829
+| epoch  83 |  1500/ 1796 batches | accuracy    0.833
+-----------------------------------------------------------
+| end of epoch  83 | time: 26.32s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  84 |   500/ 1796 batches | accuracy    0.832
+| epoch  84 |  1000/ 1796 batches | accuracy    0.832
+| epoch  84 |  1500/ 1796 batches | accuracy    0.834
+-----------------------------------------------------------
+| end of epoch  84 | time: 25.47s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  85 |   500/ 1796 batches | accuracy    0.831
+| epoch  85 |  1000/ 1796 batches | accuracy    0.835
+| epoch  85 |  1500/ 1796 batches | accuracy    0.830
+-----------------------------------------------------------
+| end of epoch  85 | time: 25.53s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  86 |   500/ 1796 batches | accuracy    0.835
+| epoch  86 |  1000/ 1796 batches | accuracy    0.833
+| epoch  86 |  1500/ 1796 batches | accuracy    0.832
+-----------------------------------------------------------
+| end of epoch  86 | time: 25.93s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  87 |   500/ 1796 batches | accuracy    0.837
+| epoch  87 |  1000/ 1796 batches | accuracy    0.833
+| epoch  87 |  1500/ 1796 batches | accuracy    0.835
+-----------------------------------------------------------
+| end of epoch  87 | time: 25.34s | valid accuracy    0.896
+-----------------------------------------------------------
+| epoch  88 |   500/ 1796 batches | accuracy    0.835
+| epoch  88 |  1000/ 1796 batches | accuracy    0.836
+| epoch  88 |  1500/ 1796 batches | accuracy    0.836
+-----------------------------------------------------------
+| end of epoch  88 | time: 25.44s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch  89 |   500/ 1796 batches | accuracy    0.838
+| epoch  89 |  1000/ 1796 batches | accuracy    0.838
+| epoch  89 |  1500/ 1796 batches | accuracy    0.834
+-----------------------------------------------------------
+| end of epoch  89 | time: 26.34s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch  90 |   500/ 1796 batches | accuracy    0.837
+| epoch  90 |  1000/ 1796 batches | accuracy    0.839
+| epoch  90 |  1500/ 1796 batches | accuracy    0.836
+-----------------------------------------------------------
+| end of epoch  90 | time: 25.60s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch  91 |   500/ 1796 batches | accuracy    0.837
+| epoch  91 |  1000/ 1796 batches | accuracy    0.837
+| epoch  91 |  1500/ 1796 batches | accuracy    0.840
+-----------------------------------------------------------
+| end of epoch  91 | time: 26.00s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch  92 |   500/ 1796 batches | accuracy    0.836
+| epoch  92 |  1000/ 1796 batches | accuracy    0.839
+| epoch  92 |  1500/ 1796 batches | accuracy    0.838
+-----------------------------------------------------------
+| end of epoch  92 | time: 26.38s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch  93 |   500/ 1796 batches | accuracy    0.839
+| epoch  93 |  1000/ 1796 batches | accuracy    0.841
+| epoch  93 |  1500/ 1796 batches | accuracy    0.839
+-----------------------------------------------------------
+| end of epoch  93 | time: 25.45s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch  94 |   500/ 1796 batches | accuracy    0.841
+| epoch  94 |  1000/ 1796 batches | accuracy    0.838
+| epoch  94 |  1500/ 1796 batches | accuracy    0.838
+-----------------------------------------------------------
+| end of epoch  94 | time: 26.32s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch  95 |   500/ 1796 batches | accuracy    0.840
+| epoch  95 |  1000/ 1796 batches | accuracy    0.839
+| epoch  95 |  1500/ 1796 batches | accuracy    0.843
+-----------------------------------------------------------
+| end of epoch  95 | time: 25.55s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch  96 |   500/ 1796 batches | accuracy    0.841
+| epoch  96 |  1000/ 1796 batches | accuracy    0.841
+| epoch  96 |  1500/ 1796 batches | accuracy    0.843
+-----------------------------------------------------------
+| end of epoch  96 | time: 26.04s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch  97 |   500/ 1796 batches | accuracy    0.840
+| epoch  97 |  1000/ 1796 batches | accuracy    0.842
+| epoch  97 |  1500/ 1796 batches | accuracy    0.844
+-----------------------------------------------------------
+| end of epoch  97 | time: 25.49s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch  98 |   500/ 1796 batches | accuracy    0.844
+| epoch  98 |  1000/ 1796 batches | accuracy    0.841
+| epoch  98 |  1500/ 1796 batches | accuracy    0.843
+-----------------------------------------------------------
+| end of epoch  98 | time: 25.73s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch  99 |   500/ 1796 batches | accuracy    0.844
+| epoch  99 |  1000/ 1796 batches | accuracy    0.843
+| epoch  99 |  1500/ 1796 batches | accuracy    0.844
+-----------------------------------------------------------
+| end of epoch  99 | time: 25.97s | valid accuracy    0.897
+-----------------------------------------------------------
+| epoch 100 |   500/ 1796 batches | accuracy    0.844
+| epoch 100 |  1000/ 1796 batches | accuracy    0.843
+| epoch 100 |  1500/ 1796 batches | accuracy    0.844
+-----------------------------------------------------------
+| end of epoch 100 | time: 25.78s | valid accuracy    0.897
+-----------------------------------------------------------
+Checking the results of test dataset.
+test accuracy    0.896
+| toxic:    0.903 | severe_toxic:    0.991 | obscene:    0.947
+| threat:    0.998 | insult:    0.951 | identity_hate:    0.992
+[[[28819     9]
+  [ 3085     2]]
+
+ [[31617     2]
+  [  296     0]]
+
+ [[30217    35]
+  [ 1658     5]]
+
+ [[31837     0]
+  [   78     0]]
+
+ [[30359     7]
+  [ 1549     0]]
+
+ [[31655     0]
+  [  260     0]]]
+               precision    recall  f1-score   support
+
+        toxic       0.18      0.00      0.00      3087
+ severe toxic       0.00      0.00      0.00       296
+      obscene       0.12      0.00      0.01      1663
+       threat       0.00      0.00      0.00        78
+       insult       0.00      0.00      0.00      1549
+identity hate       0.00      0.00      0.00       260
+
+    micro avg       0.12      0.00      0.00      6933
+    macro avg       0.05      0.00      0.00      6933
+ weighted avg       0.11      0.00      0.00      6933
+  samples avg       0.00      0.00      0.00      6933
