@@ -6,12 +6,8 @@ Step:
 Models Implemented :
 
 1.Naive Bayes :
-
-
-
-
-
-
+The only change you might need to make is in how the csv files are read into the program. Other than that as long as the correct
+csv files are read the program should run just fine.
 
 
 2:BiLSTM - based Model
