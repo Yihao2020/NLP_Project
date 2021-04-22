@@ -1,4 +1,14 @@
 # NLP_Project
+
+Toxic Comment Classification in Online Data Repository
+
+Team Members : Rohan Singh Wilkho, Sun Yul Lee, Devesh Kumar, Yihao Xie, Thomas Taylor
+
+
+
+
+
+
 Setup Steps:
 1 . clone the branch .
 2. Install the dependenciese using mentioned in the requirement.txt .command : pip install -r requirement.txt
