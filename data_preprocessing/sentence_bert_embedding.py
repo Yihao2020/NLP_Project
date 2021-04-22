@@ -17,6 +17,10 @@ def generate_bert_embeddings(filename):
     return data
 
 
+if __name__ == "__main__":
+    generate_bert_embeddings("")
+
+
 
 
 
