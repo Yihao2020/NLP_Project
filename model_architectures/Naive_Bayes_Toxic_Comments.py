@@ -6,8 +6,8 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn import metrics
 
 def main():
-    train = pd.read_csv('train.csv')
-    test = pd.read_csv('test.csv')
+    train = pd.read_csv("../data/train.csv")
+    test = pd.read_csv("../data/test.csv")
 
     train.head()
 
