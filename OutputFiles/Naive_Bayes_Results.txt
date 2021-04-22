@@ -1,7 +1,5 @@
 (159571, 8)
 
-(153164, 2)
-
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 159571 entries, 0 to 159570
 Data columns (total 8 columns):
@@ -17,16 +15,6 @@ Data columns (total 8 columns):
  7   identity_hate  159571 non-null  int64 
 dtypes: int64(6), object(2)
 memory usage: 9.7+ MB
-
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 153164 entries, 0 to 153163
-Data columns (total 2 columns):
- #   Column        Non-Null Count   Dtype 
----  ------        --------------   ----- 
- 0   id            153164 non-null  object
- 1   comment_text  153164 non-null  object
-dtypes: object(2)
-memory usage: 2.3+ MB
 
 toxic
 severe_toxic
