@@ -27,11 +27,11 @@ Models Implemented :
   1) Prepare the vector embedding by running , command : python data_preprocessing/sentence_bert_embedding.py
   2) Run the run_BiLSTM.py , command : python model_architectures/run_BiLSTM.py
 
-4:CNN
-  To run this CNN model: python model_architectures/CNN.py
-  It uses data/train.csv as input and compute the classificiation.
-  The output should look like OutputFiles/CNN_output.txt
-  You can also check JupyterNoteBooks/CNN_demo.ipynb to see the results.
+4. CNN
+  - To run this CNN model: python model_architectures/CNN.py
+  - It uses data/train.csv as input and compute the classificiation.
+  - The output should look like OutputFiles/CNN_output.txt
+  - You can also check JupyterNoteBooks/CNN_demo.ipynb to see the results.
   
 5:BERT - based Model
   For this model we used the pre-trained BERT model. We tried three variants: "BERT -> Classification Layer", "BERT -> One dense layer -> Classification" and "BERT -> Two Dense Layers -> Classification"
