@@ -21,4 +21,10 @@ Models Implemented :
   How to run.
   1) Prepare the vector embedding by running , command : python data_preprocessing/sentence_bert_embedding.py
   2) Run the run_BiLSTM.py , command : python model_architectures/run_BiLSTM.py
+
+
+3:BERT - based Model
+  For this model we used the pre-trained BERT model. We tried three variants: "BERT -> Classification Layer", "BERT -> One dense layer -> Classification" and "BERT -> Two Dense Layers -> Classification"
+  How to run:
+  1) On the command line run: python BERT_Classification.py (The code would require certain section to commented and uncommented depending on the type of BERT variant being run)
  
