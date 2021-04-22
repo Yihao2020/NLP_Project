@@ -29,3 +29,8 @@ Models Implemented :
   How to run:
   1) On the command line run: python BERT_Classification.py (The code would require certain section to commented and uncommented depending on the type of BERT variant being run)
  
+4:CNN
+  To run this CNN model: python model_architectures/CNN.py
+  It uses data/train.csv as input and compute the classificiation.
+  The output should look like OutputFiles/CNN_output.txt
+  You can also check JupyterNoteBooks/CNN_demo.ipynb to see the results.
