@@ -60,7 +60,7 @@ def main():
     # Prepare train and test data
     # df= pd.read_csv(io.BytesIO(uploaded['train.csv']),encoding='latin-1') 
     # df1 = df.head(10000)
-    df = preprocess_file('data/train.csv')
+    df = preprocess_file('../data/train.csv')
     X=df['comment_text']
     classes=["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]
     y=df[classes].values
