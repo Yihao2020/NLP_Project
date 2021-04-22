@@ -1,7 +1,13 @@
 # NLP_Project
-Step:
+Setup Steps:
 1 . clone the branch .
-2. Install the dependenciese using mentioned in the requirement.txt
+2. Install the dependenciese using mentioned in the requirement.txt .command : pip install -r requirement.txt
+3. To install sentence transformer from UKLAB , command: pip install -U sentence-transformers
+
+
+
+****** ALL THE OUTPUTS are in OutputFiles directory 
+
 
 Models Implemented :
 
