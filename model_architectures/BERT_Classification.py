@@ -71,12 +71,12 @@ def main():
 
     print('average sentence length: ', df.comment_text.str.split().str.len().mean())
     print('stdev sentence length: ', df.comment_text.str.split().str.len().std())
-
+    '''
     cols = df.columns
     label_cols = list(cols[2:])
     num_labels = len(label_cols)
     print('Label columns: ', label_cols)
-    '''
+
 
 
     # Creating one-hot encodings for each comment. These one-hot encodings will be the target variables for the dataset
