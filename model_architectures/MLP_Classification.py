@@ -80,7 +80,7 @@ def collate_batch(batch):
          label_list.to(torch.device("cuda" if torch.cuda.is_available() else "cpu")), \
          offsets.to(torch.device("cuda" if torch.cuda.is_available() else "cpu"))
 
-def train(model, dataloader, optimizer, criterion, epoch):
+def train(model, dataloader, optimizer, criterion, weights, epoch):
   model.train()
   total_acc, total_count = 0, 0
   log_interval = 500
@@ -91,6 +91,7 @@ def train(model, dataloader, optimizer, criterion, epoch):
     predited_label = model(text, offsets)
     label = label.type_as(predited_label)
     loss = criterion(predited_label, label)
+    loss = (loss * weights).mean()
     loss.backward()
     torch.nn.utils.clip_grad_norm_(model.parameters(), 0.1)
     optimizer.step()
@@ -145,8 +146,7 @@ def evaluate(model, dataloader, criterion, test):
 def main():
   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
   print('Reading Data...')
-  path = os.getcwd()
-  data = readData(os.path.join(path, 'data', 'train.csv'))
+  data = readData('../data/train.csv')
   print('Complete reading data')
   print()
 
@@ -172,6 +172,34 @@ def main():
   print('Train Dataset: {}'.format(train_data.shape))
   print('Valid Dataset: {}'.format(valid_data.shape))
   print('Test Dataset: {}'.format(test_data.shape))
+  print()
+
+  toxic = 0
+  severe = 0
+  obscene = 0
+  threat = 0
+  insult = 0
+  hate = 0
+
+  for label in train_data["label"]:
+    if label[0] == 1:
+      toxic += 1
+    if label[1] == 1:
+      severe += 1
+    if label[2] == 1:
+      obscene += 1
+    if label[3] == 1:
+      threat += 1
+    if label[4] == 1:
+      insult += 1
+    if label[5] == 1:
+      hate += 1
+
+  print('In Train Dataset:')
+  print('| toxic: {:5d} | severe toxic: {:5d} | obscene: {:5d} | threat: {:5d} | '
+        'insult: {:5d} | identity hate: {:5d} |'.format(toxic, severe, obscene, threat, insult, hate))
+
+  class_weights = [1000/toxic, 1000/severe, 1000/obscene, 1000/threat, 1000/insult, 1000/hate]
   
   tokenizer = get_tokenizer('basic_english')
   vocab = build_vocab(train_data, tokenizer)
@@ -193,7 +221,8 @@ def main():
   hidden_size = 256
   model = MLP_Classification(vocab_size, embed_size, hidden_size, num_class).to(device)
 
-  criterion = torch.nn.BCEWithLogitsLoss()
+  weights = torch.tensor(class_weights).to(device)
+  criterion = torch.nn.BCEWithLogitsLoss(reduction='none')
   optimizer = torch.optim.SGD(model.parameters(), lr=LR)
   scheduler = torch.optim.lr_scheduler.StepLR(optimizer, 1.0, gamma=0.1)
   total_accu = None
@@ -206,14 +235,10 @@ def main():
   print()
 
   print('Start training...\n')
-  last = False
   for epoch in range(1, EPOCHS + 1):
     epoch_start_time = time.time()
-    train(model, train_dataloader, optimizer, criterion, epoch)
-    if epoch == EPOCHS:
-      last = True
+    train(model, train_dataloader, optimizer, criterion, weights, epoch)
     accu_val, each_val, total_predited, total_label = evaluate(model, valid_dataloader, criterion, test=False)
-    target_names = ['toxic', 'severe toxic', 'obscene', 'threat', 'insult', 'identity hate']
     if total_accu is not None and total_accu > accu_val:
       scheduler.step()
     else:
@@ -230,7 +255,8 @@ def main():
   print('| threat: {:8.3f} | insult: {:8.3f} | identity_hate: {:8.3f}'.format(each_val[3], each_val[4], each_val[5]))
   confusion_matrix = multilabel_confusion_matrix(total_label.cpu().numpy(), total_predited.cpu().numpy())
   print(confusion_matrix)
-  print(classification_report(total_label.cpu().numpy(), total_predited.cpu().numpy(), target_names=target_names))
+  target_names = ['toxic', 'severe toxic', 'obscene', 'threat', 'insult', 'identity hate']
+  print(classification_report(total_label.cpu().numpy(), total_predited.cpu().numpy(), target_names=target_names, zero_division=0))
 
 if __name__ == '__main__':  
   main()
