@@ -14,11 +14,11 @@ Models Implemented :
 
 1:Naive Bayes 
   We implemented a Naive Bayes Model
-  To Run : python model_architectures/Naive_Bayes_Toxic_Comments.py 
+  - To Run : python model_architectures/Naive_Bayes_Toxic_Comments.py 
 
 2:MLP - based Model
   For this model we used multiple linear layers.
-  How to run: python model_architectures/MLP_Classification.py
+  - How to run: python model_architectures/MLP_Classification.py
   The output should look like OutputFiles/MLP_output.txt
   
 3:BiLSTM - based Model
