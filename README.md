@@ -13,4 +13,6 @@ csv files are read the program should run just fine.
 2:BiLSTM - based Model
   For this model we used SBERT vector embeddings as input . We tried with both "Input -> BiLSTM -> flatten -> dense"  and "Input -> BiLSTM -> BiLSTM-> flatten ->     dense.
   How to run.
-  1) Prepare the vector embedding by 
+  1) Prepare the vector embedding by running , command : python data_preprocessing/sentence_bert_embedding.py
+  2) Run the run_BiLSTM.py , command : python model_architectures/run_BiLSTM.py
+ 
