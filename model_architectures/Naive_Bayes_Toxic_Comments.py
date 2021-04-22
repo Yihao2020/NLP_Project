@@ -7,26 +7,19 @@ from sklearn import metrics
 
 def main():
     train = pd.read_csv("../data/train.csv")
-    test = pd.read_csv("../data/test.csv")
 
     train.head()
 
-    test.head()
 
     print(train.shape)
-    print()
-    print(test.shape)
     print()
 
 
     train.info()
     print()
 
-    test.info()
-    print()
 
-    features = ['toxic', 'severe_toxic', 'obscene', 'threat',
-           'insult', 'identity_hate']
+    features = ['toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate']
 
     length = len(features)
 
@@ -54,10 +47,6 @@ def main():
     # Transform the test data using only the 'text' column values: count_test
         count_test = count_vectorizer.transform(X_test)
 
-        count_main_test = count_vectorizer.transform(test.comment_text)
-
-    # Prints the first 10 features of the count_vectorizer
-        #print(count_vectorizer.get_feature_names()[:10])
 
     # Initialize a TfidfVectorizer object: tfidf_vectorizer
         tfidf_vectorizer = TfidfVectorizer(stop_words='english', max_df=0.7)
