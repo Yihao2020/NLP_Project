@@ -29,9 +29,9 @@ Models Implemented :
 
 4:CNN
   - To run this CNN model: python model_architectures/CNN.py
-  - It uses data/train.csv as input and compute the classificiation.
-  - The output should look like OutputFiles/CNN_output.txt
-  - You can also check JupyterNoteBooks/CNN_demo.ipynb to see the results.
+  >> It uses data/train.csv as input and compute the classificiation.
+  >> The output should look like OutputFiles/CNN_output.txt
+  >> You can also check JupyterNoteBooks/CNN_demo.ipynb to see the results.
   
 5:BERT - based Model
   For this model we used the pre-trained BERT model. We tried three variants: "BERT -> Classification Layer", "BERT -> One dense layer -> Classification" and "BERT -> Two Dense Layers -> Classification"
