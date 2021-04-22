@@ -58,7 +58,7 @@ class CustomBERTModel(torch.nn.Module):
 def main():
     # reading the file into a dataframe
 
-    df = pd.read_csv('train.csv') # train.csv should be in the same directory as this pyhton file
+    df = pd.read_csv('../data/train.csv') # train.csv should be in the same directory as this pyhton file
 
     '''
     # Exploring Data
