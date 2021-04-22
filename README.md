@@ -27,7 +27,7 @@ Models Implemented :
   1) Prepare the vector embedding by running , command : python data_preprocessing/sentence_bert_embedding.py
   2) Run the run_BiLSTM.py , command : python model_architectures/run_BiLSTM.py
 
-4. CNN
+4:CNN
   - To run this CNN model: python model_architectures/CNN.py
   - It uses data/train.csv as input and compute the classificiation.
   - The output should look like OutputFiles/CNN_output.txt
