@@ -33,7 +33,7 @@ Models Implemented :
     - The output should look like OutputFiles/CNN_output.txt. <br />
     - You can also check JupyterNoteBooks/CNN_demo.ipynb to see the results.
   
-5:BERT - based Model
+5:BERT - based Model (CUDA needs to be installed on the machine)
   For this model we used the pre-trained BERT model. We tried three variants: "BERT -> Classification Layer", "BERT -> One dense layer -> Classification" and "BERT -> Two Dense Layers -> Classification"
   How to run:
   1) On the command line run: python BERT_Classification.py (The code would require certain section to commented and uncommented depending on the type of BERT variant being run)
