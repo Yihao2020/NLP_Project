@@ -1,3 +1,0 @@
-Read Me NB
-The only change you might need to make is in how the csv files are read into the program. Other than that as long as the correct
-csv files are read the program should run just fine.
