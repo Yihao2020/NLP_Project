@@ -7,6 +7,7 @@ Setup Steps:
 
 
 ****** ALL THE OUTPUTS are in OutputFiles directory 
+******* for CNN and BERT layer based model we have jupyter notebooks in the "JupyterNoteBooks" directory
 
 
 Models Implemented :
